@@ -17,7 +17,7 @@ public class Sorted{
         arr[i] = smallerNumber;  
     }  
   }
-  public static void insertionSort(int array[]) {  
+  public static void insertionSort(int[] array) {  
     int n = array.length;  
     for (int j = 1; j < n; j++) {  
         int key = array[j];  
@@ -29,4 +29,7 @@ public class Sorted{
         array[i+1] = key;  
     }  
   } 
+  public static void sort(int[] array){
+    insertionSort(array);
+  }
 }
